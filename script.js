@@ -1,14 +1,16 @@
-
 function EnviarFofoca() {
   let fofoca = document.getElementById("fofoca").value;
 
-  // cria um novo parágrafo
-  let novaFofoca = document.createElement("p");
-  novaFofoca.textContent = fofoca;
+  if (fofoca.trim() !== "") { // não deixa vazio
+    let lista = document.getElementById("listaFofocas");
 
-  // adiciona dentro da div "listaFofocas"
-  document.getElementById("listaFofocas").appendChild(novaFofoca);
+    let novaFofoca = document.createElement("p"); // cria linha nova
+    novaFofoca.textContent = fofoca;
 
-  // limpa o campo de texto
-  document.getElementById("fofoca").value = "";
+    lista.appendChild(novaFofoca); // joga dentro da div
+
+    document.getElementById("fofoca").value = ""; // limpa textarea
+  } else {
+    alert("Escreve alguma fofoca antes de enviar 😅");
+  }
 }
