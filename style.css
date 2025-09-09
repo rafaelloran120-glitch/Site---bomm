@@ -1,22 +1,17 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff0f6;
+  background: #ffe4f0;
   text-align: center;
   padding: 20px;
 }
 
-h1 {
-  color: deeppink;
-}
-
 textarea {
-  width: 300px;
-  height: 100px;
-  padding: 10px;
+  width: 90%;
+  max-width: 400px;
   border: 2px solid pink;
   border-radius: 10px;
-  background-color: #fff;
-  margin: 10px 0;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 button {
@@ -31,21 +26,12 @@ button {
 button:hover {
   background-color: hotpink;
   color: white;
-  transform: scale(1.05);
-  transition: 0.3s;
 }
 
-#lista-fofocas {
+#listaFofocas {
   margin-top: 20px;
   text-align: left;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  background: #ffe6f0;
-  padding: 15px;
-  border-radius: 10px;
 }
-
 .fofoca {
   background: white;
   border: 1px solid pink;
