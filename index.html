@@ -6,15 +6,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>👑 Site de Fofoca 👑</h1>
-  <p>Escreva aqui a fofoca e clique em enviar!</p>
+  <h1>📢 Site de Fofoca</h1>
+  <p>🚨 Escreva a fofoca e ela vai aparecer aqui embaixo!</p>
 
-  <textarea id="fofoca" placeholder="Digite a fofoca..."></textarea><br>
-  <button onclick="EnviarFofoca()">Enviar Fofoca</button>
+  <textarea id="fofoca" rows="4" placeholder="Escreva sua fofoca..."></textarea>
+  <br>
+  <button onclick="enviarFofoca()">Postar Fofoca</button>
 
-  <div id="lista-fofocas">
-    <h2>📢 Últimas Fofocas:</h2>
-  </div>
+  <h2>Últimas Fofocas:</h2>
+  <div id="listaFofocas"></div>
 
   <script src="script.js"></script>
 </body>
