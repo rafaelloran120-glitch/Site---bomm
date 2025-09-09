@@ -1,0 +1,30 @@
+textarea {
+  width:300px;
+  height:120px;
+  padding:10px;
+  border:2px solid pink;
+  border-radius:10px;
+  background-color: #fff0f6;
+  margin: 10px 0;
+}
+  button {
+  background-color: pink;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  }
+  button:hover {
+  background-color: hotpink;
+  color: white;
+  transform: scale(1.05);
+  transition: 0.3s;
+  }
+  button:active {
+    background-color: deeppink;
+    transform: scale(0.95);
+  }
+  body {
+  background-image: url("https://i.imgur.com/wSTFkRM.png");
+  }
