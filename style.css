@@ -1,30 +1,55 @@
-textarea {
-  width:300px;
-  height:120px;
-  padding:10px;
-  border:2px solid pink;
-  border-radius:10px;
+body {
+  font-family: Arial, sans-serif;
   background-color: #fff0f6;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: deeppink;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid pink;
+  border-radius: 10px;
+  background-color: #fff;
   margin: 10px 0;
 }
-  button {
+
+button {
   background-color: pink;
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
   font-weight: bold;
-  }
-  button:hover {
+}
+
+button:hover {
   background-color: hotpink;
   color: white;
   transform: scale(1.05);
   transition: 0.3s;
-  }
-  button:active {
-    background-color: deeppink;
-    transform: scale(0.95);
-  }
-  body {
-  background-image: url("https://i.imgur.com/wSTFkRM.png");
-  }
+}
+
+#lista-fofocas {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffe6f0;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.fofoca {
+  background: white;
+  border: 1px solid pink;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
