@@ -1,19 +1,22 @@
-function EnviarFofoca() {
-  let fofoca = document.getElementById("fofoca").value;
+function enviarFofoca() {
+  let campo = document.getElementById("fofoca");
+  let texto = campo.value;
 
-  if (fofoca.trim() === "") {
-    alert("Escreva alguma coisa antes de enviar!");
+  if (texto.trim() === "") {
+    alert("Escreva uma fofoca antes de postar!");
     return;
   }
 
-  // Criar um novo bloco de fofoca
+  let lista = document.getElementById("listaFofocas");
+
+  // cria uma nova fofoca
   let novaFofoca = document.createElement("div");
   novaFofoca.classList.add("fofoca");
-  novaFofoca.textContent = fofoca;
+  novaFofoca.innerText = texto;
 
-  // Adicionar no mural
-  document.getElementById("lista-fofocas").appendChild(novaFofoca);
+  // adiciona no topo
+  lista.prepend(novaFofoca);
 
-  // Limpar a caixa de texto
-  document.getElementById("fofoca").value = "";
+  // limpa o campo
+  campo.value = "";
 }
