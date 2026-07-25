@@ -1,21 +1,92 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Site de Fofoca</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pra você, Madu 💜</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>📢 Site de Fofoca</h1>
-  <p>🚨 Escreva a fofoca e ela vai aparecer aqui embaixo!</p>
+    <canvas id="bg-canvas"></canvas>
 
-  <textarea id="fofoca" rows="4" placeholder="Escreva sua fofoca..."></textarea>
-  <br>
-  <button onclick="enviarFofoca()">Postar Fofoca</button>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="emoji-float">💜</div>
+            <div class="emoji-float delay1">✨</div>
+            <div class="emoji-float delay2">🌸</div>
+            <h1 class="title">Oi, Madu</h1>
+            <p class="subtitle">Fiz isso pra você... se quiser ver</p>
+            <div class="scroll-hint">
+                <span>Role pra baixo</span>
+                <div class="arrow">↓</div>
+            </div>
+        </div>
+    </section>
 
-  <h2>Últimas Fofocas:</h2>
-  <div id="listaFofocas"></div>
+    <!-- Mensagem principal -->
+    <section class="message-section">
+        <div class="card">
+            <div class="card-icon">💔</div>
+            <h2>Eu sei que você tá mal</h2>
+            <p>Perder a conta do Roblox é foda. Eu sei como é perder coisa que a gente gosta. Mas quer saber? Vai ficar tudo bem.</p>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Consolo -->
+    <section class="message-section">
+        <div class="card delay-card">
+            <div class="card-icon">🌟</div>
+            <h2>O jogo não te define</h2>
+            <p>As memórias que você criou lá ficam com você pra sempre. Ninguém tira isso. Cada risada, cada noite jogando, cada amigo — isso é seu de verdade.</p>
+        </div>
+    </section>
+
+    <!-- História do Rafael -->
+    <section class="message-section">
+        <div class="card delay-card2">
+            <div class="card-icon">💙</div>
+            <h2>Sabe? Eu já perdi uma Ana também</h2>
+            <p>Perdi uma pessoa que eu gostava muito. Fiquei mal por um tempão. Mas hoje eu tô bem. Superei. E você vai superar isso também, Madu. Sério. Tem dias ruins, mas passa.</p>
+        </div>
+    </section>
+
+    <!-- Foto do Rafael -->
+    <section class="message-section photo-section">
+        <div class="card delay-card3">
+            <div class="card-icon">🫶</div>
+            <h2>Eu fiz isso por você</h2>
+            <p>sei lá, eu tava entediado e fiz isso kkk<br>mas sério, espero que você goste, Madu ❤️</p>
+            <div class="photo-frame">
+                <img src="rafael.jpg" alt="Rafael" class="rafael-photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Mensagem reflexiva final -->
+    <section class="final-section">
+        <div class="final-content">
+            <div class="stars-container" id="stars-final"></div>
+            <h2 class="final-title">Uma coisa que eu aprendi:</h2>
+            <blockquote class="final-quote">
+                "As coisas mais bonitas da vida não são coisas.<br>
+                São pessoas, momentos, e lembranças<br>
+                que a gente carrega no coração."
+            </blockquote>
+            <p class="final-sub">Você vai ficar bem, Madu. Confia. 💜</p>
+            <div class="hearts-rain" id="hearts-rain"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Feito com 💜 por um amigo</p>
+        <p class="footer-sub">Sim, eu sei programar kkk ✨</p>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
